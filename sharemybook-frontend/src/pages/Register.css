@@ -1,0 +1,8 @@
+.register-background {
+    background: linear-gradient(135deg, #c3bed1, #e3e3e3);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
