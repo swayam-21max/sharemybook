@@ -1,0 +1,362 @@
+/* General Reset and Body Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #004080; 
+    color: white;
+    padding: 4rem 0;
+    text-align: center;
+    width: 100%;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.1rem;
+    color: #e0e0e0;
+    margin-bottom: 30px;
+}
+
+.hero-section button {
+    font-size: 1.1rem;
+    padding: 12px 30px;
+    border-radius: 30px;
+    margin: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.hero-section button:hover {
+    transform: scale(1.05);
+}
+
+.hero-section button:focus {
+    outline: none;
+}
+
+/* Features Section */
+.features-section {
+    padding: 3rem 0;
+    background-color: #ffffff;
+}
+
+.features-section h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #004080;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.feature-col {
+    background-color: #f8f9fa;
+    padding: 25px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.feature-col:hover {
+    transform: translateY(-5px);
+}
+
+.feature-col h5 {
+    font-size: 1.3rem;
+    color: #004080;
+    margin-bottom: 20px;
+}
+
+.feature-col p {
+    color: #777;
+    font-size: 1rem;
+}
+
+/* Most Shared Books Section */
+.books-section {
+    padding: 4rem 0;
+    background-color: #f0f4f7;
+}
+
+.books-section h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #004080;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.book-card {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+    height:100px;
+    width:500px;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+}
+
+.book-card img {
+    border-radius: 8px;
+}
+
+/* Testimonials Section */
+.testimonial-section {
+    padding: 6rem 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.testimonial-section h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #004080;
+    margin-bottom: 40px;
+}
+
+.testimonial-card {
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    padding: 3rem;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 2rem;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+.testimonial-card blockquote {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+.testimonial-card blockquote::before {
+    content: "“";
+    font-size: 3rem;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    color: #004080;
+}
+
+.testimonial-card blockquote::after {
+    content: "”";
+    font-size: 3rem;
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    color: #004080;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+    padding: 3rem 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.newsletter-section h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #004080;
+    margin-bottom: 30px;
+}
+
+.newsletter-section .form-control {
+    width: 60%;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.newsletter-section button {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 30px;
+    margin-top: 20px;
+    background-color: #004080;
+    color: white;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.newsletter-section button:hover {
+    background-color: #003366;
+}
+
+/* Blog Section */
+.blog-section {
+    padding: 4rem 0;
+    background-color: #f0f4f7;
+}
+
+.blog-section h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #004080;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.blog-section .card {
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.blog-section .card:hover {
+    transform: translateY(-5px);
+}
+
+.blog-section .card-body {
+    padding: 20px;
+}
+
+.blog-section .card-title {
+    font-size: 1.5rem;
+    color: #004080;
+}
+
+.blog-section .card-text {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* FAQ Section */
+.faq-section {
+    padding: 4rem 0;
+    background-color: #ffffff;
+}
+
+.faq-section h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #004080;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.faq-section ul {
+    list-style: none;
+    font-size: 1.2rem;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.faq-section ul li {
+    margin: 15px 0;
+}
+
+/* Social Share Section */
+.social-share-section {
+    padding: 3rem 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.social-share-section h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #004080;
+    margin-bottom: 30px;
+}
+
+.social-share-section .social-share {
+    font-size: 1.1rem;
+    padding: 10px 30px;
+    border-radius: 30px;
+    margin: 10px;
+    background-color: #ffffff;
+    color: #004080;
+    border: 2px solid #004080;
+    transition: all 0.3s ease-in-out;
+}
+
+.social-share-section .social-share:hover {
+    background-color: #004080;
+    color: white;
+}
+
+/* Footer Section */
+.footer {
+    padding: 2rem 0;
+    background-color: #004080;
+    color: white;
+}
+
+.footer p {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.footer ul {
+    list-style: none;
+    text-align: center;
+}
+
+.footer ul li {
+    font-size: 1rem;
+    margin-bottom: 8px;
+}
+
+.footer .social-links svg {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+.footer .social-links svg:hover {
+    color: #ffcc00;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .feature-col h5 {
+        font-size: 1.1rem;
+    }
+
+    .newsletter-section .form-control {
+        width: 80%;
+    }
+
+    .social-share-section .social-share {
+        font-size: 1rem;
+        padding: 8px 20px;
+    }
+
+    .footer p {
+        font-size: 1rem;
+    }
+
+    .footer ul {
+        padding-left: 0;
+    }
+}

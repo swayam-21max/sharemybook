@@ -1,0 +1,171 @@
+/* BooksPage.css */
+
+/* Global styles for the container */
+.books-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto; /* Center container */
+}
+
+.books-header {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.toggle-view, .btn-add {
+    margin-left: 10px;
+    font-size: 1rem; /* Ensure buttons have consistent font size */
+}
+
+.search-bar {
+    width: 70%;
+    max-width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.sort-dropdown {
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Book Cards */
+.book-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100px;
+    
+    overflow: hidden; /* Prevent content overflow */
+    max-width: 300px; /* Ensure card width does not exceed */
+}
+
+.book-card:hover {
+    transform: scale(1.05);
+}
+
+.book-card .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.book-title {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.book-text {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.btn-buy {
+    margin-top: 10px;
+    font-size: 1rem; /* Ensure buttons are uniform */
+}
+
+/* Ensure consistent size for images */
+.book-card img {
+    width: 300px; /* Make the image take up full width of the card */
+    height: 350px; /* Set a consistent height */
+    object-fit: cover; /* Ensures image maintains aspect ratio without stretching */
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #002b5c;
+    padding: 10px 20px;
+    color: white;
+}
+
+.navbar .navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.navbar .navbar-nav {
+    display: flex;
+    align-items: center;  /* Vertically align navbar items */
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.navbar .navbar-nav .nav-link {
+    color: white !important;
+    padding: 8px 12px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;  /* Align icon and text properly */
+}
+
+.navbar .navbar-nav .nav-link i {
+    font-size: 1.3rem; /* Set consistent icon size */
+    margin-right: 5px; /* Space between icon and text */
+}
+
+.navbar .navbar-nav .nav-link:hover {
+    background-color: #003366;
+    border-radius: 4px;
+}
+
+/* Modal Styles */
+.modal-header {
+    background-color: #f8f9fa;
+}
+
+.modal-body {
+    padding: 30px 20px;
+}
+
+.modal-footer {
+    justify-content: space-between;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .books-container {
+        padding: 15px;
+    }
+
+    .search-bar {
+        width: 60%;
+    }
+
+    .sort-dropdown {
+        font-size: 0.9rem;
+    }
+
+    .book-card {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 576px) {
+    .books-header {
+        font-size: 1.75rem;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .btn-add {
+        width: 100%;
+    }
+
+    .navbar .navbar-nav .nav-link {
+        font-size: 1rem; /* Adjust font size for smaller screens */
+    }
+
+    .navbar .navbar-nav .nav-link i {
+        font-size: 1.2rem; /* Adjust icon size for smaller screens */
+    }
+}
